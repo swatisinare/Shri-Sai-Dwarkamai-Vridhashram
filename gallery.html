@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery — Shri Sai Dwarkamai Vridhashram</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-text">
+                    Shri Sai Dwarkamai
+                    <span>Vridhashram</span>
+                </div>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="donate.html">Donate</a>
+                <a href="volunteer.html">Volunteer</a>
+                <a href="contact.html">Contact</a>
+                <a href="donate.html" class="nav-donate-btn">Donate Now</a>
+            </nav>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <div class="nav-overlay"></div>
+    <div class="header-spacer"></div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Gallery</h1>
+            <p>Glimpses of life, love, and celebrations at Dwarkamai</p>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section">
+        <div class="container">
+            <div class="gallery-filters reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="festivals">Festivals</button>
+                <button class="filter-btn" data-filter="daily">Daily Life</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="facilities">Facilities</button>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item visible" data-category="festivals">
+                    <img src="assets/images/gallery/prayer.png" alt="Prayer of an Anonymous Soul">
+                </div>
+                <div class="gallery-item visible" data-category="daily">
+                    <img src="assets/images/gallery/food-service.png" alt="Satisfying people's hunger">
+                </div>
+                <div class="gallery-item visible" data-category="facilities">
+                    <img src="assets/images/gallery/trust-view.png" alt="Dwarka Mai Seva Trust view">
+                </div>
+                <div class="gallery-item visible" data-category="events">
+                    <img src="assets/images/gallery/help-people.png" alt="You don't need a reason to help">
+                </div>
+                <div class="gallery-item visible" data-category="daily">
+                    <img src="assets/images/gallery/growing-old-fun.png" alt="Growing old can be fun">
+                </div>
+                <div class="gallery-item visible" data-category="daily">
+                    <img src="assets/images/gallery/how-you-are-old.png" alt="It's not how old you are">
+                </div>
+                <div class="gallery-item visible" data-category="facilities">
+                    <img src="assets/images/gallery/dining-hall.png" alt="Dining and Kitchen Area">
+                </div>
+                <div class="gallery-item visible" data-category="events">
+                    <img src="assets/images/gallery/helping-elderly.png" alt="Helping the elderly">
+                </div>
+                <div class="gallery-item visible" data-category="daily">
+                    <img src="assets/images/gallery/morning-exercise.png" alt="Morning Exercise">
+                </div>
+                <div class="gallery-item visible" data-category="facilities">
+                    <img src="assets/images/gallery/theater.png" alt="Theater Area">
+                </div>
+                <div class="gallery-item visible" data-category="facilities">
+                    <img src="assets/images/gallery/surroundings.png" alt="Nature around Dwaraka Mai Seva">
+                </div>
+                <div class="gallery-item visible" data-category="events">
+                    <img src="assets/images/gallery/medical-care.png" alt="Medical Care">
+                </div>
+                <div class="gallery-item visible" data-category="facilities">
+                    <img src="assets/images/gallery/facilities.png" alt="Facilities at Dwaraka Mai Seva">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+        <button class="lightbox-btn prev" aria-label="Previous image">&#10094;</button>
+        <img src="" alt="Gallery image">
+        <button class="lightbox-btn next" aria-label="Next image">&#10095;</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <h4>Shri Sai Dwarkamai Vridhashram</h4>
+                    <p>A loving home dedicated to providing care, dignity, and companionship to senior citizens. Founded with the vision of serving the elderly with devotion and respect.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="services.html">Services</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="donate.html">Donate</a>
+                        <a href="volunteer.html">Volunteer</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact-info">
+                        <p><span class="icon">&#128205;</span> 123, Sai Nagar, Near Dwarkamai Temple, Pune - 411001</p>
+                        <p><span class="icon">&#128222;</span> +91 98765 43210</p>
+                        <p><span class="icon">&#9993;</span> info@saidwarkamai.org</p>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="Twitter">TW</a>
+                        <a href="#" aria-label="YouTube">YT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Shri Sai Dwarkamai Vridhashram. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>

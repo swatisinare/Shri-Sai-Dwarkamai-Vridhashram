@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer — Shri Sai Dwarkamai Vridhashram</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-text">
+                    Shri Sai Dwarkamai
+                    <span>Vridhashram</span>
+                </div>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="donate.html">Donate</a>
+                <a href="volunteer.html">Volunteer</a>
+                <a href="contact.html">Contact</a>
+                <a href="donate.html" class="nav-donate-btn">Donate Now</a>
+            </nav>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <div class="nav-overlay"></div>
+    <div class="header-spacer"></div>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/sliders/slider3.jpg') center/cover no-repeat;">
+        <div class="container">
+            <h1>Become a Volunteer</h1>
+            <p>Your time and compassion can change an elder's day</p>
+        </div>
+    </section>
+
+    <!-- Why Volunteer -->
+    <section class="section">
+        <div class="container text-center">
+            <h2 class="section-title reveal">Why Volunteer With Us?</h2>
+            <p class="section-subtitle reveal">Volunteering at Dwarkamai is more than service — it's a life-changing experience. You'll bring smiles, companionship, and purpose to our elders while gaining invaluable life lessons in return.</p>
+            <div class="reveal" style="margin-top: 2rem;">
+                <img src="assets/images/gallery/helping-elderly.png" alt="Volunteers helping elderly residents" style="width: 100%; max-width: 700px; border-radius: 12px; object-fit: cover; margin: 0 auto; display: block;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Roles -->
+    <section class="section" style="background-color: var(--color-card); padding-top: 0;">
+        <div class="container">
+            <h2 class="section-title reveal">Roles Available</h2>
+            <p class="section-subtitle reveal">Choose a role that matches your skills and interests</p>
+            <div class="grid-3">
+                <div class="card text-center reveal">
+                    <div class="card-icon">&#129505;</div>
+                    <h3>Caretaker</h3>
+                    <p>Spend time with residents, assist with daily activities, and provide companionship and emotional support.</p>
+                </div>
+                <div class="card text-center reveal reveal-delay-1">
+                    <div class="card-icon">&#127878;</div>
+                    <h3>Event Organizer</h3>
+                    <p>Help plan and organize festivals, cultural events, birthday celebrations, and recreational activities.</p>
+                </div>
+                <div class="card text-center reveal reveal-delay-2">
+                    <div class="card-icon">&#9764;</div>
+                    <h3>Medical Volunteer</h3>
+                    <p>Assist with health checkups, medicine distribution, and physiotherapy sessions (medical background preferred).</p>
+                </div>
+                <div class="card text-center reveal">
+                    <div class="card-icon">&#128218;</div>
+                    <h3>Teaching & Mentoring</h3>
+                    <p>Conduct workshops, teach digital literacy, read to residents, or share skills like painting and music.</p>
+                </div>
+                <div class="card text-center reveal reveal-delay-1">
+                    <div class="card-icon">&#128188;</div>
+                    <h3>Administrative Support</h3>
+                    <p>Help with documentation, fundraising, social media management, and day-to-day operational tasks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Form -->
+    <section class="section">
+        <div class="container">
+            <div class="grid-2" style="align-items: start;">
+                <div class="reveal">
+                    <h2>Register as a Volunteer</h2>
+                    <p>Fill in the form below and our team will reach out to you within 48 hours.</p>
+
+                    <form id="volunteer-form">
+                        <div class="form-group">
+                            <label for="vol-name">Full Name</label>
+                            <input type="text" id="vol-name" name="name" placeholder="Enter your full name">
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="vol-email">Email Address</label>
+                            <input type="email" id="vol-email" name="email" placeholder="Enter your email">
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="vol-phone">Phone Number</label>
+                            <input type="tel" id="vol-phone" name="phone" placeholder="Enter your 10-digit phone number">
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="vol-age">Age</label>
+                            <input type="number" id="vol-age" name="age" placeholder="Enter your age" min="16" max="80">
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label>Availability</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="availability" value="weekdays"> Weekdays</label>
+                                <label><input type="radio" name="availability" value="weekends"> Weekends</label>
+                                <label><input type="radio" name="availability" value="both"> Both</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="vol-role">Preferred Role</label>
+                            <select id="vol-role" name="role">
+                                <option value="">Select a role</option>
+                                <option value="caretaker">Caretaker</option>
+                                <option value="event-organizer">Event Organizer</option>
+                                <option value="medical">Medical Volunteer</option>
+                                <option value="teaching">Teaching & Mentoring</option>
+                                <option value="admin">Administrative Support</option>
+                            </select>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="vol-message">Why do you want to volunteer?</label>
+                            <textarea id="vol-message" name="message" placeholder="Tell us about your motivation..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Application</button>
+                    </form>
+                </div>
+
+                <div class="reveal reveal-delay-2">
+                    <h2>Volunteer Testimonials</h2>
+                    <p>Hear from those who have experienced the joy of giving back.</p>
+
+                    <div class="card" style="margin-bottom: 1.5rem;">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <img src="assets/images/stories/kusuma-kumari.png" alt="Sneha Patil" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                            <div>
+                                <p style="font-weight: 600; color: var(--color-primary); margin-bottom: 0.2rem;">Sneha Patil</p>
+                                <p style="font-size: 0.85rem; color: var(--color-text-muted);">Weekend Volunteer, 2 years</p>
+                            </div>
+                        </div>
+                        <p class="quote" style="font-style: italic;">"Spending Sundays at Dwarkamai has been the most fulfilling part of my week. The smiles on their faces make everything worth it."</p>
+                    </div>
+                    <div class="card" style="margin-bottom: 1.5rem;">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <img src="assets/images/stories/anil-kulkarni.png" alt="Dr. Rohan Mehta" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                            <div>
+                                <p style="font-weight: 600; color: var(--color-primary); margin-bottom: 0.2rem;">Dr. Rohan Mehta</p>
+                                <p style="font-size: 0.85rem; color: var(--color-text-muted);">Medical Volunteer, 1 year</p>
+                            </div>
+                        </div>
+                        <p class="quote" style="font-style: italic;">"As a medical student, volunteering here gave me practical experience and taught me the true meaning of compassion in healthcare."</p>
+                    </div>
+                    <div class="card">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <img src="assets/images/stories/pvkrc-dattu.png" alt="Amit Joshi" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                            <div>
+                                <p style="font-weight: 600; color: var(--color-primary); margin-bottom: 0.2rem;">Amit Joshi</p>
+                                <p style="font-size: 0.85rem; color: var(--color-text-muted);">Event Organizer Volunteer, 3 years</p>
+                            </div>
+                        </div>
+                        <p class="quote" style="font-style: italic;">"Organizing Diwali and Holi celebrations for the residents was an incredible experience. Their enthusiasm is contagious!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thank You Modal -->
+    <div class="modal-overlay">
+        <div class="modal">
+            <button class="modal-close">&times;</button>
+            <div class="modal-icon">&#127881;</div>
+            <h3>Welcome Aboard!</h3>
+            <p>Thank you for volunteering! Our team will contact you within 48 hours.</p>
+            <a href="index.html" class="btn btn-primary">Back to Home</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <h4>Shri Sai Dwarkamai Vridhashram</h4>
+                    <p>A loving home dedicated to providing care, dignity, and companionship to senior citizens. Founded with the vision of serving the elderly with devotion and respect.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="services.html">Services</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="donate.html">Donate</a>
+                        <a href="volunteer.html">Volunteer</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact-info">
+                        <p><span class="icon">&#128205;</span> 123, Sai Nagar, Near Dwarkamai Temple, Pune - 411001</p>
+                        <p><span class="icon">&#128222;</span> +91 98765 43210</p>
+                        <p><span class="icon">&#9993;</span> info@saidwarkamai.org</p>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="Twitter">TW</a>
+                        <a href="#" aria-label="YouTube">YT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Shri Sai Dwarkamai Vridhashram. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/forms.js"></script>
+</body>
+</html>

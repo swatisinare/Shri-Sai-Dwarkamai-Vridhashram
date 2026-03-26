@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate — Shri Sai Dwarkamai Vridhashram</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-text">
+                    Shri Sai Dwarkamai
+                    <span>Vridhashram</span>
+                </div>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="donate.html">Donate</a>
+                <a href="volunteer.html">Volunteer</a>
+                <a href="contact.html">Contact</a>
+                <a href="donate.html" class="nav-donate-btn">Donate Now</a>
+            </nav>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <div class="nav-overlay"></div>
+    <div class="header-spacer"></div>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/sliders/slider2.jpg') center/cover no-repeat;">
+        <div class="container">
+            <h1>Support Our Cause</h1>
+            <p>Your generosity helps us provide a loving home for our elders</p>
+        </div>
+    </section>
+
+    <!-- Why Donate -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title reveal">Your Impact</h2>
+            <p class="section-subtitle reveal">Every contribution makes a real difference in the lives of our residents</p>
+            <div class="reveal" style="margin-bottom: 2rem; display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                <img src="assets/images/gallery/food-service.png" alt="Food service to elders" style="width: 100%; border-radius: 12px; object-fit: cover; height: 250px;">
+                <img src="assets/images/gallery/help-people.png" alt="Helping people in need" style="width: 100%; border-radius: 12px; object-fit: cover; height: 250px;">
+            </div>
+            <div class="impact-grid">
+                <div class="impact-card reveal">
+                    <div class="amount">&#8377; 500</div>
+                    <p>Feeds an elder nutritious meals for one week</p>
+                </div>
+                <div class="impact-card reveal reveal-delay-1">
+                    <div class="amount">&#8377; 2,500</div>
+                    <p>Covers monthly medical checkups for one resident</p>
+                </div>
+                <div class="impact-card reveal reveal-delay-2">
+                    <div class="amount">&#8377; 5,000</div>
+                    <p>Sponsors one elder's complete monthly care</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Form -->
+    <section class="section" style="background-color: var(--color-card);">
+        <div class="container">
+            <div class="grid-2" style="align-items: start;">
+                <div class="reveal">
+                    <h2>Make a Donation</h2>
+                    <p>Fill in the form below to make your contribution. Every rupee counts!</p>
+
+                    <form id="donate-form">
+                        <div class="form-group">
+                            <label for="donor-name">Full Name</label>
+                            <input type="text" id="donor-name" name="name" placeholder="Enter your full name">
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="donor-email">Email Address</label>
+                            <input type="email" id="donor-email" name="email" placeholder="Enter your email">
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="donor-phone">Phone Number</label>
+                            <input type="tel" id="donor-phone" name="phone" placeholder="Enter your 10-digit phone number">
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Select Amount</label>
+                            <div class="amount-options">
+                                <button type="button" class="amount-btn" data-amount="500">&#8377; 500</button>
+                                <button type="button" class="amount-btn" data-amount="1000">&#8377; 1,000</button>
+                                <button type="button" class="amount-btn" data-amount="2500">&#8377; 2,500</button>
+                                <button type="button" class="amount-btn" data-amount="5000">&#8377; 5,000</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="custom-amount">Or Enter Custom Amount (&#8377;)</label>
+                            <input type="number" id="custom-amount" name="custom-amount" placeholder="Enter amount" min="100">
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Donation Frequency</label>
+                            <div class="toggle-group">
+                                <div class="toggle-option active">One-time</div>
+                                <div class="toggle-option">Monthly</div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Payment Method</label>
+                            <div class="payment-methods">
+                                <div class="payment-method active">UPI</div>
+                                <div class="payment-method">Card</div>
+                                <div class="payment-method">Bank Transfer</div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Donate Now</button>
+                    </form>
+                </div>
+
+                <div class="reveal reveal-delay-2">
+                    <h2>Other Ways to Help</h2>
+                    <p>Apart from monetary donations, you can also contribute through:</p>
+
+                    <div class="card" style="margin-bottom: 1.5rem;">
+                        <div class="card-icon">&#127858;</div>
+                        <h3>Food & Groceries</h3>
+                        <p>Rice, dal, cooking oil, fruits, vegetables, and other daily essentials are always needed.</p>
+                    </div>
+                    <div class="card" style="margin-bottom: 1.5rem;">
+                        <div class="card-icon">&#128085;</div>
+                        <h3>Clothing & Blankets</h3>
+                        <p>Clean clothing, warm blankets, shawls, and bedsheets in good condition.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">&#128138;</div>
+                        <h3>Medicines & Medical Supplies</h3>
+                        <p>Common medications, blood pressure monitors, wheelchairs, and medical equipment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thank You Modal -->
+    <div class="modal-overlay">
+        <div class="modal">
+            <button class="modal-close">&times;</button>
+            <div class="modal-icon">&#128591;</div>
+            <h3>Thank You!</h3>
+            <p>Your donation means the world to our elders.</p>
+            <a href="index.html" class="btn btn-primary">Back to Home</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <h4>Shri Sai Dwarkamai Vridhashram</h4>
+                    <p>A loving home dedicated to providing care, dignity, and companionship to senior citizens. Founded with the vision of serving the elderly with devotion and respect.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="services.html">Services</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="donate.html">Donate</a>
+                        <a href="volunteer.html">Volunteer</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact-info">
+                        <p><span class="icon">&#128205;</span> 123, Sai Nagar, Near Dwarkamai Temple, Pune - 411001</p>
+                        <p><span class="icon">&#128222;</span> +91 98765 43210</p>
+                        <p><span class="icon">&#9993;</span> info@saidwarkamai.org</p>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="Twitter">TW</a>
+                        <a href="#" aria-label="YouTube">YT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Shri Sai Dwarkamai Vridhashram. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/forms.js"></script>
+</body>
+</html>
